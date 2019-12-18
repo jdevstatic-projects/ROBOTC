@@ -1,0 +1,183 @@
+<Version>1.0.1</Version>
+
+<ProgrammingBlock type="loop" loopType="Repeat">
+    <Parameters>
+        <Parameter name="Count" type="long">4</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="motor10" typeDef="tMotor">clawMotor</Parameter>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">-100</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">2</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="setMultipleMotors">
+    <Parameters>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+        <Parameter name="firstMotor" type="base typedef" default="port1" typeDef="tMotor">leftMotor</Parameter>
+        <Parameter name="secondMotor" type="base typedef" default="noMotor" typeDef="tMotor">rightMotor</Parameter>
+        <Parameter name="thirdMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+        <Parameter name="fourthMotor" type="base typedef" default="noMotor" typeDef="tMotor">noMotor</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="OneLineLoop" loopType="WaitUntil">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">getDistanceValue(distanceMM)</Parameter>
+        <Parameter name="operator" type="typedef">&lt;=</Parameter>
+        <Parameter name="RHS" type="float">70</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="stopAllMotors"/>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="motor10" typeDef="tMotor">clawMotor</Parameter>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">100</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="wait">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">2</Parameter>
+        <Parameter name="unitType" type="base typedef" default="seconds" typeDef="tMovementUnits">seconds</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="loop" loopType="IfThen">
+    <Parameters>
+        <Parameter name="LHS" type="typedef">getColorName(colorDetector)</Parameter>
+        <Parameter name="operator" type="typedef">==</Parameter>
+        <Parameter name="RHS" type="float">colorGreen</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnRight">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">250</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">degrees</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="motor10" typeDef="tMotor">clawMotor</Parameter>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">-100</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnLeft">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">250</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">degrees</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="else"/>
+
+<ProgrammingBlock type="functionCall" function="turnLeft">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">250</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">degrees</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="motor10" typeDef="tMotor">clawMotor</Parameter>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">-100</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="functionCall" function="turnRight">
+    <Parameters>
+        <Parameter name="quantity" type="float" default="1">250</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">degrees</Parameter>
+        <Parameter name="speed" type="short" default="50">50</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<ProgrammingBlock type="functionCall" function="stopAllMotors"/>
+
+<ProgrammingBlock type="functionCall" function="moveMotor">
+    <Parameters>
+        <Parameter name="motorPort" type="base typedef" default="motor10" typeDef="tMotor">clawMotor</Parameter>
+        <Parameter name="quantity" type="float" default="1">1</Parameter>
+        <Parameter name="unitType" type="base typedef" default="rotations" typeDef="tMovementUnits">seconds</Parameter>
+        <Parameter name="speed" type="short" default="50">100</Parameter>
+    </Parameters>
+</ProgrammingBlock>
+
+<ProgrammingBlock type="end"/>
+
+<RobotConfiguration>#pragma config(Sensor, port2,  touchLED,       sensorVexIQ_LED)
+#pragma config(Sensor, port3,  colorDetector,  sensorVexIQ_ColorHue)
+#pragma config(Sensor, port4,  gyroSensor,     sensorVexIQ_Gyro)
+#pragma config(Sensor, port7,  distanceMM,     sensorVexIQ_Distance)
+#pragma config(Sensor, port8,  bumpSwitch,     sensorVexIQ_Touch)
+#pragma config(Motor,  motor1,          leftMotor,     tmotorVexIQ, openLoop, driveLeft, encoder)
+#pragma config(Motor,  motor6,          rightMotor,    tmotorVexIQ, openLoop, reversed, driveRight, encoder)
+#pragma config(Motor,  motor10,         armMotor,      tmotorVexIQ, openLoop, encoder)
+#pragma config(Motor,  motor11,         clawMotor,     tmotorVexIQ, openLoop, encoder)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+</RobotConfiguration>
+
+<CSource>#pragma config(Sensor, port2,  touchLED,       sensorVexIQ_LED)
+#pragma config(Sensor, port3,  colorDetector,  sensorVexIQ_ColorHue)
+#pragma config(Sensor, port4,  gyroSensor,     sensorVexIQ_Gyro)
+#pragma config(Sensor, port7,  distanceMM,     sensorVexIQ_Distance)
+#pragma config(Sensor, port8,  bumpSwitch,     sensorVexIQ_Touch)
+#pragma config(Motor,  motor1,          leftMotor,     tmotorVexIQ, openLoop, driveLeft, encoder)
+#pragma config(Motor,  motor6,          rightMotor,    tmotorVexIQ, openLoop, reversed, driveRight, encoder)
+#pragma config(Motor,  motor10,         armMotor,      tmotorVexIQ, openLoop, encoder)
+#pragma config(Motor,  motor11,         clawMotor,     tmotorVexIQ, openLoop, encoder)
+//*!!Code automatically generated by 'ROBOTC' configuration wizard               !!*//
+
+
+task main()
+{
+	repeat (4) {
+		moveMotor(clawMotor, 1, seconds, -100);
+		wait(2, seconds);
+		setMultipleMotors(50, leftMotor, rightMotor, noMotor, noMotor);
+		waitUntil (getDistanceValue(distanceMM) &lt;= 70);
+		stopAllMotors();
+		moveMotor(clawMotor, 1, seconds, 100);
+		wait(2, seconds);
+		if (getColorName(colorDetector) == colorGreen) {
+			turnRight(250, degrees, 50);
+			moveMotor(clawMotor, 1, seconds, -100);
+			turnLeft(250, degrees, 50);
+		} else {
+			turnLeft(250, degrees, 50);
+			moveMotor(clawMotor, 1, seconds, -100);
+			turnRight(250, degrees, 50);
+		}
+		stopAllMotors();
+		moveMotor(clawMotor, 1, seconds, 100);
+	}
+}
+</CSource>
