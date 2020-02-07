@@ -24,3 +24,21 @@ execution will proceed to the next line.
 There is the possibility that the loop may not exit or
 the condition might never be reached, so proper algorithm
 should be implemented.
+
+For example,
+
+```
+setTouchLEDColor(touchLED, colorGreen);
+forward(1, rotations, 50);
+setTouchLEDColor(touchLED, colorNone);
+```
+
+is actually correct. It seems that green is there
+while the robot is moving forward, then will be set
+to none. When this command 
+
+`setTouchLEDColor(touchLED, colorNone);`
+
+is placed as the first line inside `Repeat Forever`,
+then the green light will not be displayed while the robot
+is moving forward.
