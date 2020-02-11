@@ -10,7 +10,7 @@ void lightLEDGreen() {
 }
 
 void lightLEDRedIF() {
-	wait(5, seconds);
+	wait(3, seconds);
 	if (getTouchLEDValue(touchLED) == 1) {
 
 		setTouchLEDColor(touchLED, colorRed);
