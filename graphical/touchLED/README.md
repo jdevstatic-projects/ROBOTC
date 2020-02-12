@@ -1,7 +1,9 @@
 # TouchLED Sensor
 These are the sample codes for `Touch LED` sensor that can be used for
-several missions of your own. You must save this file as `.rbg` because
-it will be read correctly by Graphical RobotC. As a raw file, it is
+several missions of your own. You must save this file as `.rbg` for
+it to be read correctly by Graphical RobotC. 
+
+As a raw file, it is
 an XML file to be read correctly by the program, in our case,
 the Graphical RobotC.
 
