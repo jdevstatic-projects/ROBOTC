@@ -46,7 +46,7 @@ bit before being set to none.
 In case the set color command is placed
 inside `if`, when testing it, before the program is run,
 there must be the touch input because in less than
-a second, `if` will return either true or false
+a second, `if` will return either `true` or `false`
 based on its test and
 will just skip the commands inside `if` when
-it evaluates to false.
+the result is `false`.
