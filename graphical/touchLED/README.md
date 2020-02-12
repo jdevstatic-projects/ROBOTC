@@ -4,7 +4,7 @@ several missions of your own. You must save this file as `.rbg` for
 it to be read correctly by Graphical RobotC. 
 
 As a raw file, it is
-an XML file to be read correctly by the program, in our case,
+an XML file to be read correctly by a program, in our case,
 the Graphical RobotC.
 
 [touchLED.rbg](https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED.rbg)
