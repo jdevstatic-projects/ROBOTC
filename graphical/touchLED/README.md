@@ -1,11 +1,12 @@
-# Mission
-These are sample codes for `Touch LED` sensor. This can be used for
+# TouchLED Sensor
+These are the sample codes for `Touch LED` sensor that can be used for
 several missions of your own.
 
 ## Setup
-When the VEX Clawbot IQ does not contain all the sensors,
+When the physical VEX Clawbot IQ does not have all the sensors
+and it is returning a port error,
 you must manually remove the other sensors not present in your
-Clawbot IQ.
+Clawbot IQ in its RobotC setup.
 
 `Motor & Sensor Setup` > `Devices`
 
@@ -17,13 +18,17 @@ to wait for a touch input.
 
 `waitUntil (getTouchLEDValue(touchLED) == true);`
 
-When there is already the input, the loop will end and the program
-execution will proceed to the next line.
+When there is the input, the loop will end and the program
+execution will proceed to the next line. Remember, `waitUntil`
+in RobotC is a loop with condition, just like `while` loop.
 
 ## Bugs
 There is the possibility that the loop may not exit or
-the condition might never be reached, so proper algorithm
-should be implemented.
+the condition might never be reached
+or an `if` statement returns `false` without noticing it,
+so proper algorithm should be implemented and the 
+programmer must be aware of these things to avoid bugs
+that can easily be prevented.
 
 For example,
 
@@ -33,12 +38,15 @@ forward(1, rotations, 50);
 setTouchLEDColor(touchLED, colorNone);
 ```
 
-is actually correct. It seems that green is there
+is actually correct. It seems that green is displayed
 while the robot is moving forward, then will be set
-to none. When this command 
+to none. The `forward` command hangs the diplayed color a little
+bit before being set to none. 
 
-`setTouchLEDColor(touchLED, colorNone);`
-
-is placed as the first line inside `Repeat Forever`,
-then the green light will not be displayed while the robot
-is moving forward.
+In case the set color command is placed
+inside `if`, when testing it, before the program is run,
+there must be the touch input because in less than
+a second, `if` will return either true or false
+based on its test and
+will just skip the commands inside `if` when
+it evaluates to false.
