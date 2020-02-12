@@ -7,11 +7,11 @@ As a raw file, it is
 an XML file to be read correctly by the program, in our case,
 the Graphical RobotC.
 
-<https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED.rbg>
+[touchLED.rbg](https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED.rbg)
 
-<https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED2.rbg>
+[touchLED2.rbg](https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED2.rbg)
 
-<https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED3.rbg>
+[touchLED3.rbg](https://raw.githubusercontent.com/xdvrx1/ROBOTC/master/graphical/touchLED/touchLED3.rbg)
 
 ## Setup
 When the physical VEX Clawbot IQ does not have all the sensors
