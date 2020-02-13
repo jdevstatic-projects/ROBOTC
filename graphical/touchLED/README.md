@@ -13,7 +13,7 @@ it to be read correctly by Graphical ROBOTC.
 When the physical VEX Clawbot IQ does not have all the sensors
 and it is returning a port error,
 you must manually remove the other sensors not present in your
-Clawbot IQ in its RobotC setup.
+Clawbot IQ in its ROBOTC setup.
 
 `Motor & Sensor Setup` > `Devices`
 
@@ -27,7 +27,7 @@ to wait for a touch input.
 
 When there is the input, the loop will end and the program
 execution will proceed to the next line. Remember, `waitUntil`
-in RobotC is a loop with condition, just like `while` loop.
+in ROBOTC is a loop with a condition, just like `while` loop.
 
 ## Bugs
 There is the possibility that the loop may not exit or
@@ -47,8 +47,8 @@ setTouchLEDColor(touchLED, colorNone);
 
 is actually correct. It seems that green is displayed
 while the robot is moving forward, then will be set
-to none. The `forward` command hangs the diplayed color a little
-bit before being set to none. 
+to none. The `forward` command hangs the diplayed color while
+the command is being executed before being set to none. 
 
 In case the set color command is placed
 inside `if`, when testing it, before the program is run,
