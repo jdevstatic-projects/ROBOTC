@@ -63,7 +63,7 @@ setTouchLEDColor(touchLED, colorNone);
 is actually correct. It seems that green is displayed
 while the robot is moving forward, then will be set
 to none. The `forward` command hangs the diplayed color while
-the command is being executed before being set to none. 
+the command is being executed before being set to color none. 
 
 In case the set color command is placed
 inside `if`, when testing it, before the program is run,
