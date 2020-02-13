@@ -29,6 +29,23 @@ When there is the input, the loop will end and the program
 execution will proceed to the next line. Remember, `waitUntil`
 in ROBOTC is a loop with a condition, just like `while` loop.
 
+***
+
+Basically, the touchLED sensor does not retain 
+the logical value 1 (pressed) after removing the touch input. So,
+as long as you are touching this sensor, it will continue
+moving forward.
+
+```
+	repeat (forever) {
+		waitUntil (getTouchLEDValue(touchLED) == true);
+		setMultipleMotors(50, leftMotor, rightMotor, noMotor, noMotor);
+		setTouchLEDColor(touchLED, colorGreen);
+		waitUntil (getTouchLEDValue(touchLED) == false);
+		stopAllMotors();
+		setTouchLEDColor(touchLED, colorNone);
+```
+
 ## Bugs
 There is the possibility that the loop may not exit or
 the condition might never be reached
