@@ -67,8 +67,7 @@
 
 task main()
 {
-	repeat (forever) {
-		//setTouchLEDColor(touchLED, colorNone);
+	repeat (forever) {		
 		waitUntil (getTouchLEDValue(touchLED) == true);
 		setTouchLEDColor(touchLED, colorGreen);
 		forward(1, rotations, 50);
