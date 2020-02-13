@@ -25,7 +25,8 @@ to wait for a touch input.
 
 `waitUntil (getTouchLEDValue(touchLED) == true);`
 
-When there is the input, the loop will end and the program
+And when the expected input is supplied, 
+the loop will end and the program
 execution will proceed to the next line. Remember, `waitUntil`
 in ROBOTC is a loop with a condition, just like `while` loop.
 
