@@ -1,11 +1,11 @@
 # ROBOTC
 ROBOTC is a programming language built for different
-Robotics platform and was based on C.
+Robotics platform and was based on C. So,
 
-It proves that C is still widely used today,
+> It proves that C is still widely used today,
 even in the Robotics field. 
 
-It also offers Natural Language, an elusive dream
+> It also offers Natural Language, an elusive dream
 in computer science.
 
 There are two modes for the ROBOTC: text-based and graphical.
