@@ -36,13 +36,13 @@ as long as you are touching this sensor, it will continue
 moving forward.
 
 ```
-	repeat (forever) {
-		waitUntil (getTouchLEDValue(touchLED) == true);
-		setMultipleMotors(50, leftMotor, rightMotor, noMotor, noMotor);
-		setTouchLEDColor(touchLED, colorGreen);
-		waitUntil (getTouchLEDValue(touchLED) == false);
-		stopAllMotors();
-		setTouchLEDColor(touchLED, colorNone);
+repeat (forever) {
+	waitUntil (getTouchLEDValue(touchLED) == true);
+	setMultipleMotors(50, leftMotor, rightMotor, noMotor, noMotor);
+	setTouchLEDColor(touchLED, colorGreen);
+	waitUntil (getTouchLEDValue(touchLED) == false);
+	stopAllMotors();
+	setTouchLEDColor(touchLED, colorNone);
 ```
 
 ## Bugs
