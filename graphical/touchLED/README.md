@@ -43,6 +43,7 @@ repeat (forever) {
 	waitUntil (getTouchLEDValue(touchLED) == false);
 	stopAllMotors();
 	setTouchLEDColor(touchLED, colorNone);
+	}
 ```
 
 ## Bugs
