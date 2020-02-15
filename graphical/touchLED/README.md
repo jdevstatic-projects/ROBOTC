@@ -32,8 +32,9 @@ in ROBOTC is a loop with a condition, just like `while` loop.
 
 Basically, the touchLED sensor does not retain 
 the logical value 1 (pressed) after removing the touch input. So,
-as long as you are touching this sensor, it will continue
-moving forward.
+as long as you are touching the white surface of 
+this sensor, it will continue
+moving forward. The code below demonstrates this behavior:
 
 ```
 repeat (forever) {
