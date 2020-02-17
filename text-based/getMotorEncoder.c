@@ -16,7 +16,7 @@ task main()
 	displayDataWhileMoving();
 	
 	//hang the program a little bit
-	//for data display
+	//for the final data display
 	displayVariableValues(line1, encodedMotor);
 	wait(5, seconds);
 
