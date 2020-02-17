@@ -10,6 +10,11 @@ There are two modes for the ROBOTC: text-based and graphical.
 Graphical is for beginners, to help them in the process
 while the text-based is the standard way to program.
 
+To navigate fully as files and folders, you visit the GitHub repo
+itself:
+
+<https://github.com/xdvrx1/ROBOTC/>
+
 ## Topics
 
 <https://xdvrx1.github.io/ROBOTC/graphical/touchLED/>
