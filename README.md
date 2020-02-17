@@ -17,4 +17,4 @@ itself:
 
 ## Topics
 
-<https://xdvrx1.github.io/ROBOTC/graphical/touchLED/>
+[Touch LED Sensor](https://xdvrx1.github.io/ROBOTC/graphical/touchLED/)
