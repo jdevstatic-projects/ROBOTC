@@ -4,7 +4,7 @@
 void displayDataWhileMoving() {
 	resetMotorEncoder(leftMotor);
 	float encodedMotor;
-	while (getMotorEncoder(leftMotor) <= 360) {
+	while ( getBumperValue(bumpSwitch) == 0 ) {
 		setMultipleMotors(20, leftMotor, rightMotor, noMotor, noMotor);
 		encodedMotor = getMotorEncoder(leftMotor);
 		displayVariableValues(line1, encodedMotor);
@@ -14,9 +14,10 @@ void displayDataWhileMoving() {
 task main()
 {
 	displayDataWhileMoving();
-	resetMotorEncoder(leftMotor);
-	stopAllMotors();
-
+	
+	//hang the program a little bit
+	//for data display
+	displayVariableValues(line1, encodedMotor);
 	wait(5, seconds);
 
 }
