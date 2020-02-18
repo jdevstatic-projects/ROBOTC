@@ -35,7 +35,7 @@ void displayDataWhileMoving() {
 		setTouchLEDColor(touchLED, colorGreen);
 	}
 
-	//this point will be reached if it goes out of the
+	//this point will be reached if this function goes out of the
 	//while loop
 	setMultipleMotors(0, leftMotor, rightMotor, noMotor, noMotor);
 	setTouchLEDColor(touchLED, colorRed);
