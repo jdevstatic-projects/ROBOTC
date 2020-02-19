@@ -20,7 +20,7 @@ void displayDataWhileMoving() {
 		//the if statement can be skipped when
 		//there is no touch input, hence it will
 		//continue moving forward
-		//but if there is the touch input
+		//but if there is the touch input,
 		//will turn left
 		if (getTouchLEDValue(touchLED) == 1) {
 			turnLeft(260, degrees, 100);
