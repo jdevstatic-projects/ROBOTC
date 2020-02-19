@@ -23,6 +23,16 @@ void displayDataWhileMoving() {
 		//but if there is the touch input,
 		//will turn left
 		if (getTouchLEDValue(touchLED) == 1) {
+			//just a demonstration that
+			//we can put several if statements			
+			//inside this while loop,
+			//in this case just turning left			
+
+			//basic turning will depend more
+			//on the power level, battery and
+			//friction,
+			//but the ideal in the virtual world
+			//is 250 degrees,
 			turnLeft(260, degrees, 100);
 		}
 
