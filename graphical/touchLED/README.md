@@ -47,7 +47,6 @@ repeat (forever) {
 	}
 ```
 
-## Logic
 There is the possibility that the loop may not exit or
 the condition might never be reached
 or an `if` statement returns `false` without noticing it,
