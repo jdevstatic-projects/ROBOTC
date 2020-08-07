@@ -1,7 +1,6 @@
 # Line Tracking
 
 ## Code
-
 ```
 task main()
 {
@@ -18,5 +17,7 @@ task main()
 ```
 
 ## Setup
+In Robot Virtual World, this corresponds to `Try It: Line Tracking`.
+This can be manually setup for the physical field.
 
 ## Details
