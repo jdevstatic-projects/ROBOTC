@@ -21,3 +21,6 @@ In Robot Virtual World, this corresponds to `Try It: Line Tracking`.
 This can be manually setup for the physical field.
 
 ## Details
+Depending on the setup, either you will be tracking right or left.
+Take note of the High Speed, it is the driving force whether it will
+go left or right.
