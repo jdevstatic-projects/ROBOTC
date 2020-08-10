@@ -18,3 +18,9 @@ itself:
 ## Topics
 
 [Touch LED Sensor](https://xdvrx1.github.io/ROBOTC/graphical/touchLED/)
+
+[Line Tracking](https://xdvrx1.github.io/ROBOTC/graphical/line-tracking/)
+
+[Sorter Challenge](https://xdvrx1.github.io/ROBOTC/graphical/sorter/)
+
+[Traffic Lights](https://xdvrx1.github.io/ROBOTC/graphical/traffic-lights/)
