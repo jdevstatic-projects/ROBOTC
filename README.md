@@ -18,14 +18,14 @@ while the text-based is the standard way to program.
 To navigate fully as files and folders, you visit the GitHub repo
 itself:
 
-<https://github.com/xdvrx1/ROBOTC/>
+<https://github.com/jdevstatic/ROBOTC/>
 
 ## Topics
 
-[Touch LED Sensor](https://xdvrx1.github.io/ROBOTC/graphical/touchLED/)
+[Touch LED Sensor](https://jdevstatic.github.io/ROBOTC/graphical/touchLED/)
 
-[Line Tracking](https://xdvrx1.github.io/ROBOTC/graphical/line-tracking/)
+[Line Tracking](https://jdevstatic.github.io/ROBOTC/graphical/line-tracking/)
 
-[Sorter Challenge](https://xdvrx1.github.io/ROBOTC/graphical/sorter/)
+[Sorter Challenge](https://jdevstatic.github.io/ROBOTC/graphical/sorter/)
 
-[Traffic Lights](https://xdvrx1.github.io/ROBOTC/graphical/traffic-lights/)
+[Traffic Lights](https://jdevstatic.github.io/ROBOTC/graphical/traffic-lights/)
